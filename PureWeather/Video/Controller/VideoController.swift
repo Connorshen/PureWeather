@@ -12,4 +12,10 @@ class VideoController:BaseController{
         addLog(eventType: AnalyticsMgr.TYPE_CLICK, eventId: Event.CLOSE_CLICK, packageName: getPackageName())
         self.dismiss(animated: true, completion: nil)
     }
+    override func viewDidLoad() {
+        VideoMgr.shared.getMusic()
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        
+    }
 }
