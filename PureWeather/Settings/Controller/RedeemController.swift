@@ -12,9 +12,13 @@ class RedeemController: BaseController {
     var redeemCode:String = "-1"
     @IBAction func onRedeemClick(_ sender: Any) {
         redeemCode = redeemCodeTf.text!
-        addLog(eventType: AnalyticsMgr.TYPE_CLICK, eventId: Event.REDEEM_CLICK, msg1:redeemCode , packageName: getPackageName())
-        redeemCodeTf.resignFirstResponder()
-        QuestionMgr.shared.getQuestionCfg()
+        if(redeemCode != ""){
+            addLog(eventType: AnalyticsMgr.TYPE_CLICK, eventId: Event.REDEEM_CLICK, msg1:redeemCode , packageName: getPackageName())
+            redeemCodeTf.resignFirstResponder()
+            QuestionMgr.shared.getQuestionCfg()
+        }else{
+            showToast(msg: "请输入兑换码")
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()

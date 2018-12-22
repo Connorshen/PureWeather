@@ -8,7 +8,7 @@
 
 import Foundation
 class QuestionMode{
-    static let DEFAULT_PASSWORD = "52183640"
+    static let DEFAULT_PASSWORD = "52183255"
     static let MODE_ANSWER = "mode_answer" //提问模式
     static let MODE_FAILED = "mode_failed" //消极回答
     static let MODE_SUCCESS = "mode_success" //积极回答
