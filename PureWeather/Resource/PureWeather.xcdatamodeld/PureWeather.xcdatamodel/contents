@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CityWeather" representedClassName="CityWeather" syncable="YES" codeGenerationType="class">
+        <attribute name="cityId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isLocated" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="weatherJson" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LocatedWeather" representedClassName=".LocatedWeather" syncable="YES" codeGenerationType="class">
+        <attribute name="json" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="MainWeather" representedClassName="MainWeather" syncable="YES" codeGenerationType="class">
+        <attribute name="json" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CityWeather" positionX="0" positionY="18" width="128" height="120"/>
+        <element name="LocatedWeather" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="MainWeather" positionX="0" positionY="45" width="128" height="75"/>
+    </elements>
+</model>

@@ -1,0 +1,12 @@
+
+/* Class = "UIViewController"; title = "Main"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Main";
+
+/* Class = "UIBarButtonItem"; title = "城市"; ObjectID = "D6B-cP-p6d"; */
+"D6B-cP-p6d.title" = "城市";
+
+/* Class = "UISearchBar"; placeholder = "输入城市名或者简写"; ObjectID = "YpN-Jn-bvp"; */
+"YpN-Jn-bvp.placeholder" = "输入城市名或者简写";
+
+/* Class = "UIBarButtonItem"; title = "菜单"; ObjectID = "pu6-2M-QEB"; */
+"pu6-2M-QEB.title" = "菜单";

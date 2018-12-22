@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="103" id="Ltv-9A-wCd" customClass="LifeIndexViewCell" customModule="PureWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ltv-9A-wCd" id="uMq-Mq-21E">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空调指数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7f3-5d-5yG">
+                        <rect key="frame" x="16" y="11" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="较少开启" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="578-8F-ydP">
+                        <rect key="frame" x="94" y="11" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天气较好，无雨水困扰，较适宜进行各种运动，但因气温较低，在户外运动请注意增减衣物。" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KkU-fV-alk">
+                        <rect key="frame" x="16" y="40" width="343" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="KkU-fV-alk" secondAttribute="trailing" constant="16" id="7fB-NI-STs"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="KkU-fV-alk" secondAttribute="bottom" constant="16" id="GZI-lY-h42"/>
+                    <constraint firstItem="KkU-fV-alk" firstAttribute="top" secondItem="578-8F-ydP" secondAttribute="bottom" constant="8" symbolic="YES" id="KnH-Q2-62e"/>
+                    <constraint firstItem="578-8F-ydP" firstAttribute="top" secondItem="uMq-Mq-21E" secondAttribute="top" constant="11" id="Pvd-Bd-bOT"/>
+                    <constraint firstItem="7f3-5d-5yG" firstAttribute="top" secondItem="uMq-Mq-21E" secondAttribute="top" constant="11" id="WQN-Ia-fM3"/>
+                    <constraint firstItem="KkU-fV-alk" firstAttribute="top" secondItem="7f3-5d-5yG" secondAttribute="bottom" constant="8" symbolic="YES" id="XvP-HA-57L"/>
+                    <constraint firstItem="KkU-fV-alk" firstAttribute="leading" secondItem="uMq-Mq-21E" secondAttribute="leading" constant="16" id="bZM-Ay-S2w"/>
+                    <constraint firstItem="7f3-5d-5yG" firstAttribute="leading" secondItem="uMq-Mq-21E" secondAttribute="leading" constant="16" id="fB7-np-gM9"/>
+                    <constraint firstItem="578-8F-ydP" firstAttribute="leading" secondItem="7f3-5d-5yG" secondAttribute="trailing" constant="8" id="rSk-f9-c8b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLb" destination="KkU-fV-alk" id="Q3M-7B-rce"/>
+                <outlet property="nameLb" destination="7f3-5d-5yG" id="OeK-o6-3Yf"/>
+                <outlet property="valueLb" destination="578-8F-ydP" id="XiX-08-zJp"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="81.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,12 @@
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+use_frameworks!
+target 'PureWeather' do
+    pod 'LeanCloud', '~> 11.0.0'
+    pod 'HandyJSON', '~> 4.1.1'
+    pod 'SwiftyJSON', '~> 4.0'
+    pod 'MMDrawerController', '~> 0.5.7'
+    pod 'Toast-Swift', '~> 3.0.1'
+    pod 'AMapLocation'
+    pod 'MJRefresh'
+    pod 'SCLAlertView'
+end

@@ -1,0 +1,65 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AMapFoundation (1.5.3)
+  - AMapLocation (2.6.0):
+    - AMapFoundation (~> 1.4)
+  - HandyJSON (4.1.1)
+  - LeanCloud (11.0.1):
+    - LeanCloud/Storage (= 11.0.1)
+  - LeanCloud/Storage (11.0.1):
+    - Alamofire (~> 4.7)
+  - MJRefresh (3.1.15.3)
+  - MMDrawerController (0.5.7):
+    - MMDrawerController/Core (= 0.5.7)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
+    - MMDrawerController/MMDrawerVisualStates (= 0.5.7)
+    - MMDrawerController/Subclass (= 0.5.7)
+  - MMDrawerController/Core (0.5.7)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.5.7):
+    - MMDrawerController/Core
+  - SCLAlertView (0.8)
+  - SwiftyJSON (4.1.0)
+  - Toast-Swift (3.0.1)
+
+DEPENDENCIES:
+  - AMapLocation
+  - HandyJSON (~> 4.1.1)
+  - LeanCloud (~> 11.0.0)
+  - MJRefresh
+  - MMDrawerController (~> 0.5.7)
+  - SCLAlertView
+  - SwiftyJSON (~> 4.0)
+  - Toast-Swift (~> 3.0.1)
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/cocoapods/specs.git:
+    - Alamofire
+    - AMapFoundation
+    - AMapLocation
+    - HandyJSON
+    - LeanCloud
+    - MJRefresh
+    - MMDrawerController
+    - SCLAlertView
+    - SwiftyJSON
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AMapFoundation: 58f883c80754c659cf626deb3150936bfe8f1772
+  AMapLocation: 55116a2c8956eab7550cbb56e989aa5cdcc424e3
+  HandyJSON: 3a3de917c4118767ffe41c29b5acba23409649f4
+  LeanCloud: f9776746a4cd62bdb441f2768017a91c9516d219
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
+
+PODFILE CHECKSUM: 5ccbc4fda32b0ce9850eea4c5ce9f7ecf02dc5a6
+
+COCOAPODS: 1.5.3
