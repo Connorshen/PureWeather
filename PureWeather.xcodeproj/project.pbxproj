@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1711F95621D083BC00FB4C4D /* 藏.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1711F95521D083BC00FB4C4D /* 藏.mp3 */; };
+		1711F95821D086C800FB4C4D /* hide.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1711F95721D086C800FB4C4D /* hide.mp3 */; };
 		1714418C2116B36E009E37DF /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1714418B2116B36E009E37DF /* SettingController.swift */; };
 		171441922116C054009E37DF /* SettingViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 171441912116C054009E37DF /* SettingViewCell.xib */; };
 		171441952116C06D009E37DF /* SettingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171441942116C06D009E37DF /* SettingViewCell.swift */; };
@@ -82,7 +82,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1711F95521D083BC00FB4C4D /* 藏.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "藏.mp3"; sourceTree = "<group>"; };
+		1711F95721D086C800FB4C4D /* hide.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hide.mp3; sourceTree = "<group>"; };
 		1714418B2116B36E009E37DF /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 		171441912116C054009E37DF /* SettingViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewCell.xib; sourceTree = "<group>"; };
 		171441942116C06D009E37DF /* SettingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewCell.swift; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 		1711F95421D083A600FB4C4D /* music */ = {
 			isa = PBXGroup;
 			children = (
-				1711F95521D083BC00FB4C4D /* 藏.mp3 */,
+				1711F95721D086C800FB4C4D /* hide.mp3 */,
 			);
 			path = music;
 			sourceTree = "<group>";
@@ -710,8 +710,8 @@
 				17E4E5492108CEBA00EB5F23 /* citys.json in Resources */,
 				1752220D2102DB31008C9F09 /* DailyWeatherViewCell.xib in Resources */,
 				17157267210CBC51008F2CAE /* CityWeatherViewCell.xib in Resources */,
+				1711F95821D086C800FB4C4D /* hide.mp3 in Resources */,
 				1752221D21030744008C9F09 /* LifeIndexViewCell.xib in Resources */,
-				1711F95621D083BC00FB4C4D /* 藏.mp3 in Resources */,
 				17FE8C4821034D5B00AC9598 /* HourWeatherViewCell.xib in Resources */,
 				AAE92C0B20F7730D007755FE /* Main.storyboard in Resources */,
 			);
