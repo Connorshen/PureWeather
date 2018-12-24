@@ -11,6 +11,7 @@ import AVFoundation
 class VideoController:BaseController{
     var audioPlayer:AVAudioPlayer?
     @IBOutlet weak var coverIv: UIImageView!
+    @IBOutlet weak var edgeIv: UIImageView!
     @IBAction func onCloseClick(_ sender: Any) {
         addLog(eventType: AnalyticsMgr.TYPE_CLICK, eventId: Event.CLOSE_CLICK, packageName: getPackageName())
         self.dismiss(animated: true, completion: nil)
@@ -22,6 +23,8 @@ class VideoController:BaseController{
     func initView(){
         coverIv.layer.masksToBounds = true
         coverIv.layer.cornerRadius = 100
+        edgeIv.layer.masksToBounds = true
+        edgeIv.layer.cornerRadius = 110
     }
     override func viewWillDisappear(_ animated: Bool) {
         stopMusic()
