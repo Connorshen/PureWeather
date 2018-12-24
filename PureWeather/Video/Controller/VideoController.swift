@@ -41,6 +41,7 @@ class VideoController:BaseController{
                                       subdirectory: nil,
                                       localization: nil)
         self.audioPlayer = try! AVAudioPlayer.init(contentsOf: fileUrl!)
+        self.audioPlayer?.numberOfLoops = -1
         if (self.audioPlayer != nil)
         {
             self.audioPlayer?.play()
