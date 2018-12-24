@@ -146,7 +146,7 @@ class QuestionController: BaseController {
             var result:UInt32 = 0
             Scanner(string: question.themeColor).scanHexInt32(&result)
             let themeColor = UIColor(valueRGB: UInt(result), alpha: 1.0)
-            alertView.showCustom("比尔丶盖子", subTitle: question.msg, color: themeColor, icon: alertViewIcon!)
+            alertView.showCustom("", subTitle: question.msg, color: themeColor, icon: alertViewIcon!)
         }
     }
     @objc func onGetQuestion(){
