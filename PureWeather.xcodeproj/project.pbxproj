@@ -175,22 +175,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1711F95321D0839C00FB4C4D /* Uri */ = {
-			isa = PBXGroup;
-			children = (
-				1711F95421D083A600FB4C4D /* music */,
-			);
-			path = Uri;
-			sourceTree = "<group>";
-		};
-		1711F95421D083A600FB4C4D /* music */ = {
-			isa = PBXGroup;
-			children = (
-				1711F95721D086C800FB4C4D /* hide.mp3 */,
-			);
-			path = music;
-			sourceTree = "<group>";
-		};
 		1714418A2116B328009E37DF /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +446,7 @@
 		17CA8E5920FA46A900C15BC5 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1711F95721D086C800FB4C4D /* hide.mp3 */,
 				AAE92C0F20F7730F007755FE /* Assets.xcassets */,
 				AAE92C1420F7730F007755FE /* Info.plist */,
 				AAE92C0C20F7730D007755FE /* PureWeather.xcdatamodeld */,
@@ -609,7 +594,6 @@
 		AAE92C0420F7730D007755FE /* PureWeather */ = {
 			isa = PBXGroup;
 			children = (
-				1711F95321D0839C00FB4C4D /* Uri */,
 				17BE94DB20FB8F960052CE6B /* App */,
 				1744C2A02101C9B400ED0B84 /* Tool */,
 				179211512104C15E00D43D69 /* Analytics */,
