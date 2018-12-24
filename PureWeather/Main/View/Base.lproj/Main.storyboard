@@ -95,7 +95,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="听闻小姐治家有方，余生愿闻其详。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nR-4F-YHs">
-                                <rect key="frame" x="20" y="334" width="335" height="20.5"/>
+                                <rect key="frame" x="20" y="333.5" width="335" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -109,15 +109,24 @@
                                     <action selector="onCloseClick:" destination="Vwy-3e-XhN" eventType="touchUpInside" id="0U0-Ne-vaZ"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="yNl-Wo-7jf">
+                                <rect key="frame" x="87" y="102.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0CM-mB-KZn"/>
+                                    <constraint firstAttribute="height" constant="200" id="pCw-ia-6rg"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7bM-pI-cdw" firstAttribute="top" secondItem="Eqk-Wa-hvt" secondAttribute="top" id="85S-Ms-fZY"/>
+                            <constraint firstItem="yNl-Wo-7jf" firstAttribute="centerX" secondItem="9nR-4F-YHs" secondAttribute="centerX" id="A1h-6u-tH7"/>
                             <constraint firstItem="9nR-4F-YHs" firstAttribute="leading" secondItem="7bM-pI-cdw" secondAttribute="leading" constant="20" id="Fvt-Yf-xao"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Eqk-Wa-hvt" secondAttribute="trailing" constant="20" symbolic="YES" id="Hee-6X-Sc1"/>
                             <constraint firstItem="Qz8-nm-Jrp" firstAttribute="leading" secondItem="7bM-pI-cdw" secondAttribute="leading" id="IZF-Tc-7XC"/>
                             <constraint firstItem="Qz8-nm-Jrp" firstAttribute="bottom" secondItem="7bM-pI-cdw" secondAttribute="bottom" id="Qm1-lZ-NAV"/>
                             <constraint firstItem="7bM-pI-cdw" firstAttribute="trailing" secondItem="Qz8-nm-Jrp" secondAttribute="trailing" id="Rkz-gL-d4P"/>
+                            <constraint firstItem="9nR-4F-YHs" firstAttribute="top" secondItem="yNl-Wo-7jf" secondAttribute="bottom" constant="31" id="UJN-b5-Tr5"/>
                             <constraint firstItem="Eqk-Wa-hvt" firstAttribute="leading" secondItem="7bM-pI-cdw" secondAttribute="leading" constant="20" id="aIR-Kp-BHo"/>
                             <constraint firstItem="Qz8-nm-Jrp" firstAttribute="top" secondItem="7bM-pI-cdw" secondAttribute="top" constant="-20" id="bzx-RC-xdR"/>
                             <constraint firstItem="7bM-pI-cdw" firstAttribute="trailing" secondItem="9nR-4F-YHs" secondAttribute="trailing" constant="20" id="idN-kE-ZS5"/>
@@ -125,6 +134,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7bM-pI-cdw"/>
                     </view>
+                    <connections>
+                        <outlet property="coverIv" destination="yNl-Wo-7jf" id="eDd-LQ-yt3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRh-YK-YdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -337,6 +349,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cover" width="1000" height="1000"/>
         <image name="ic_add" width="24" height="24"/>
         <image name="ic_menu" width="24" height="24"/>
         <image name="ic_settings" width="24" height="24"/>
