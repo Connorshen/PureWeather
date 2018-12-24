@@ -46,6 +46,7 @@ class VideoController:BaseController{
             self.audioPlayer?.play()
         }
         startRotate()
+        showToast(msg: "开始播放音乐，请打开音量")
     }
     func startRotate() {
         let rotationAnim = CABasicAnimation(keyPath: "transform.rotation.z")
