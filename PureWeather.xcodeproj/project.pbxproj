@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1711F95621D083BC00FB4C4D /* 藏.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1711F95521D083BC00FB4C4D /* 藏.mp3 */; };
 		1714418C2116B36E009E37DF /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1714418B2116B36E009E37DF /* SettingController.swift */; };
 		171441922116C054009E37DF /* SettingViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 171441912116C054009E37DF /* SettingViewCell.xib */; };
 		171441952116C06D009E37DF /* SettingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171441942116C06D009E37DF /* SettingViewCell.swift */; };
@@ -15,8 +16,6 @@
 		17157267210CBC51008F2CAE /* CityWeatherViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17157266210CBC51008F2CAE /* CityWeatherViewCell.xib */; };
 		17157269210CBC5C008F2CAE /* CityWeatherViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17157268210CBC5C008F2CAE /* CityWeatherViewCell.swift */; };
 		17246696211C244B008325AA /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17246695211C244B008325AA /* VideoController.swift */; };
-		172D0D6121CE82B600597F26 /* VideoMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D0D6021CE82B600597F26 /* VideoMgr.swift */; };
-		172D0D6421CE845100597F26 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D0D6321CE845100597F26 /* Music.swift */; };
 		1744C2A42101CAB200ED0B84 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1744C2A32101CAB200ED0B84 /* Weather.swift */; };
 		174A90432106BFBE003A43D5 /* WeatherMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A90422106BFBE003A43D5 /* WeatherMgr.swift */; };
 		17506D362119AF9D003598A9 /* QuestionMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17506D352119AF9D003598A9 /* QuestionMgr.swift */; };
@@ -83,6 +82,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1711F95521D083BC00FB4C4D /* 藏.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "藏.mp3"; sourceTree = "<group>"; };
 		1714418B2116B36E009E37DF /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 		171441912116C054009E37DF /* SettingViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewCell.xib; sourceTree = "<group>"; };
 		171441942116C06D009E37DF /* SettingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewCell.swift; sourceTree = "<group>"; };
@@ -91,8 +91,6 @@
 		17157266210CBC51008F2CAE /* CityWeatherViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityWeatherViewCell.xib; sourceTree = "<group>"; };
 		17157268210CBC5C008F2CAE /* CityWeatherViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherViewCell.swift; sourceTree = "<group>"; };
 		17246695211C244B008325AA /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
-		172D0D6021CE82B600597F26 /* VideoMgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMgr.swift; sourceTree = "<group>"; };
-		172D0D6321CE845100597F26 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		1744C2A32101CAB200ED0B84 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		174A90422106BFBE003A43D5 /* WeatherMgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMgr.swift; sourceTree = "<group>"; };
 		17506D352119AF9D003598A9 /* QuestionMgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionMgr.swift; sourceTree = "<group>"; };
@@ -177,6 +175,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1711F95321D0839C00FB4C4D /* Uri */ = {
+			isa = PBXGroup;
+			children = (
+				1711F95421D083A600FB4C4D /* music */,
+			);
+			path = Uri;
+			sourceTree = "<group>";
+		};
+		1711F95421D083A600FB4C4D /* music */ = {
+			isa = PBXGroup;
+			children = (
+				1711F95521D083BC00FB4C4D /* 藏.mp3 */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
 		1714418A2116B328009E37DF /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,18 +248,8 @@
 		172D0D5F21CE82A200597F26 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				172D0D6221CE843F00597F26 /* remote */,
-				172D0D6021CE82B600597F26 /* VideoMgr.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		172D0D6221CE843F00597F26 /* remote */ = {
-			isa = PBXGroup;
-			children = (
-				172D0D6321CE845100597F26 /* Music.swift */,
-			);
-			path = remote;
 			sourceTree = "<group>";
 		};
 		1744C2A02101C9B400ED0B84 /* Tool */ = {
@@ -605,6 +609,7 @@
 		AAE92C0420F7730D007755FE /* PureWeather */ = {
 			isa = PBXGroup;
 			children = (
+				1711F95321D0839C00FB4C4D /* Uri */,
 				17BE94DB20FB8F960052CE6B /* App */,
 				1744C2A02101C9B400ED0B84 /* Tool */,
 				179211512104C15E00D43D69 /* Analytics */,
@@ -706,6 +711,7 @@
 				1752220D2102DB31008C9F09 /* DailyWeatherViewCell.xib in Resources */,
 				17157267210CBC51008F2CAE /* CityWeatherViewCell.xib in Resources */,
 				1752221D21030744008C9F09 /* LifeIndexViewCell.xib in Resources */,
+				1711F95621D083BC00FB4C4D /* 藏.mp3 in Resources */,
 				17FE8C4821034D5B00AC9598 /* HourWeatherViewCell.xib in Resources */,
 				AAE92C0B20F7730D007755FE /* Main.storyboard in Resources */,
 			);
@@ -771,7 +777,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				172D0D6121CE82B600597F26 /* VideoMgr.swift in Sources */,
 				17D5BBBB2115578600863695 /* ScreenMgr.swift in Sources */,
 				17157265210CBB9B008F2CAE /* CityWeatherItem.swift in Sources */,
 				AAE92C0E20F7730D007755FE /* PureWeather.xcdatamodeld in Sources */,
@@ -786,7 +791,6 @@
 				1714418C2116B36E009E37DF /* SettingController.swift in Sources */,
 				175F79092107464D0001E4E7 /* LocationMgr.swift in Sources */,
 				1752222121031199008C9F09 /* HourlyWeatherItem.swift in Sources */,
-				172D0D6421CE845100597F26 /* Music.swift in Sources */,
 				17D5BBC12115777400863695 /* BaseRemoteEntity.swift in Sources */,
 				17E4E5522108D5CF00EB5F23 /* CityMgr.swift in Sources */,
 				17506D3C2119B0FB003598A9 /* QuestionMode.swift in Sources */,
